@@ -40,7 +40,7 @@ jobs:
         run: ./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
 
       - name: Check lint
-        run: ./gradlew lintDemoDebug
+        run: ./gradlew lintDebug
 
       - name: Build all build type and flavor permutations
         run: ./gradlew assemble
