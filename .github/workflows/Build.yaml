@@ -49,7 +49,7 @@ jobs:
         run: ./gradlew assemble
 
       - name: Run local tests
-        run: ./gradlew testDemoDebug testProdDebug
+        run: ./gradlew testDebug
 
       - name: Upload build outputs (APKs)
         uses: actions/upload-artifact@v3
@@ -96,7 +96,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Build AndroidTest apps
-        run: ./gradlew packageDemoDebug packageDemoDebugAndroidTest --daemon
+        run: ./gradlew packageDebug packageDebugAndroidTest --daemon
 
       - name: Run instrumentation tests
         uses: reactivecircus/android-emulator-runner@v2
