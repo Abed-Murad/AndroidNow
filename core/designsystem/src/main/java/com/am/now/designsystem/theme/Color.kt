@@ -1,4 +1,4 @@
-package com.am.now.ui.theme
+package com.am.now.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

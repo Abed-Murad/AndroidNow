@@ -52,7 +52,9 @@ android {
 
 dependencies {
 
-    implementation(libs.core.ktx)
+    implementation(project(":core:designsystem"))
+
+    implementation(libs.androidx.core.kts)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))

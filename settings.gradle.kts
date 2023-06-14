@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "now"
 include(":app")
- 
+include(":core:designsystem")
