@@ -1,15 +1,19 @@
 #!/bin/sh
+# From gist at https://gist.github.com/chadmaughan/5889802
 
-echo "*****Running unit tests******"
+echo '[Pre-Push git hook] executing gradle spotlessCheck before commit'
 
+# stash any unstaged changes
 git stash -q --keep-index
 
-./gradlew test
+# run the spotlessCheck with the gradle wrapper
+./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
 
-status=$?
+# store the last exit code in a variable
+RESULT=$?
 
+# unstash the unstashed changes
 git stash pop -q
 
-echo "*****Done with unit tests******"
-
-exit $status
+# return the './gradlew spotlessCheck' exit code
+exit $RESULT

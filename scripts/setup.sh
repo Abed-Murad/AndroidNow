@@ -19,6 +19,5 @@ cat <<-EOF
 Checking the following settings helps avoid miscellaneous issues:
   * Settings -> Editor -> General -> Remove trailing spaces on: Modified lines
   * Settings -> Editor -> General -> Ensure every file ends with a line break
-  * Settings -> Editor -> General -> Auto Import -> Optimize imports on the fly (for both Kotlin\
- and Java)
+  * Settings -> Editor -> General -> Auto Import -> Optimize imports on the fly (for both Kotlin\and Java)
 EOF
