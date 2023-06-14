@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "now"
 include(":app")
 include(":core:designsystem")
+include(":feature:foryou")
+include(":core:data")

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.am.now.systemdesign"
+    namespace = "com.am.now.foryou"
     compileSdk = 33
 
     defaultConfig {
@@ -31,17 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
-    }
 }
 
 dependencies {
-    api(libs.androidx.core.kts)
-    api(libs.androidx.compose.foundation)
-    api(libs.androidx.compose.material3)
-    api(libs.androidx.compose.material.iconsExtended)
+
+    implementation(libs.androidx.core.kts)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }

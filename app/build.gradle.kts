@@ -53,6 +53,8 @@ android {
 dependencies {
 
     implementation(project(":core:designsystem"))
+    implementation(project(":core:data"))
+    implementation(project(":feature:foryou"))
 
     implementation(libs.androidx.core.kts)
     implementation(libs.lifecycle.runtime.ktx)
@@ -69,4 +71,8 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.compose.material3.windowSizeClass)
 }
