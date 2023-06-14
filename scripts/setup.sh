@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-RED='\033[0;1;31m'
-NC='\033[0m' # No Color
-
 GIT_DIR=$(git rev-parse --git-dir 2> /dev/null)
 GIT_ROOT=$(git rev-parse --show-toplevel 2> /dev/null)
 
