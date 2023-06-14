@@ -35,6 +35,9 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
+        
+      - name: Setup Android SDK Tools
+        uses: android-actions/setup-android@v2.0.2
 
       - name: Check spotless
         run: ./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
