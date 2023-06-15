@@ -4,10 +4,6 @@ plugins {
     id("now.android.application.compose")
     id("now.android.application.flavors")
     id("now.android.application.jacoco")
-    id("now.android.hilt")
-    id("jacoco")
-    id("now.android.application.firebase")
-
 }
 
 android {
@@ -36,19 +32,7 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
-    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"

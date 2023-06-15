@@ -42,5 +42,13 @@ gradlePlugin{
             id = "now.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
+        register("androidFlavors"){
+            id = "now.android.application.flavors"
+            implementationClass = "AndroidApplicationFlavorsConventionPlugin"
+        }
+        register("androidApplicationJacoco"){
+            id = "now.android.application.jacoco"
+            implementationClass = "AndroidApplicationJacocoConventionPlugin"
+        }
     }
 }

@@ -1,3 +1,4 @@
+
 import com.am.now.configureGradleManagedDevices
 import com.am.now.configureKotlinAndroid
 import com.am.now.configurePrintApksTask
@@ -7,10 +8,10 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
-class AndroidApplicationConventionPlugin: Plugin<Project>{
+class AndroidApplicationConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
-        with(target){
-            with(pluginManager){
+        with(target) {
+            with(pluginManager) {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
             }
@@ -25,4 +26,5 @@ class AndroidApplicationConventionPlugin: Plugin<Project>{
             }
         }
     }
+
 }

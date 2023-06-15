@@ -1,6 +1,6 @@
 [versions]
 agp = "8.2.0-alpha08"
-kotlin = "1.8.10"
+kotlin = "1.8.20"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
@@ -13,6 +13,9 @@ androidGradlePlugin = "8.0.2"
 firebasePerfPlugin = "1.4.2"
 firebaseCrashlyticsPlugin = "2.9.5"
 ksp = "1.8.20-1.0.11"
+androidDesugarJdkLibs = "2.0.3"
+androidxComposeCompiler = "1.4.5"
+jacoco = "0.8.7"
 
 
 androidxComposeMaterial3 = "1.2.0-alpha02"
@@ -23,7 +26,7 @@ kotlinxDatetime = "0.4.0"
 
 
 androidxNavigation="2.6.0"
-org-jetbrains-kotlin-jvm = "1.8.10"
+org-jetbrains-kotlin-jvm = "1.8.20"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -48,6 +51,9 @@ firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "fir
 firebase-performance-gradlePlugin = { group = "com.google.firebase", name = "perf-plugin", version.ref = "firebasePerfPlugin" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+
+
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 
 
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
