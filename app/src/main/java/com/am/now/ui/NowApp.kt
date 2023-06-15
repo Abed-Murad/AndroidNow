@@ -9,7 +9,7 @@ import component.NowNavigationBar
 
 @Composable
 fun NowApp(){
-    NowBottomBar()
+//    NowBottomBar()
 }
 
 @Composable
