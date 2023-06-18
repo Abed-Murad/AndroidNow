@@ -13,8 +13,8 @@ fun NowNavHost(
     startDestination: String = forYouNavigationRoute,
 ) {
     val navController = appState.navController
-    NavHost(navController = navController,
-        startDestination = startDestination,
-        modifier = Modifier){
-    }
+//    NavHost(navController = navController,
+//        startDestination = startDestination,
+//        modifier = Modifier){
+//    }
 }

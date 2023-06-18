@@ -2,6 +2,7 @@ package com.am.now.foryou.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
+import com.am.now.feature.foryou.R
 
 
 const val LINKED_NEWS_RESOURCE_ID = "linkedNewsResourceId"

@@ -2,7 +2,8 @@ package com.am.now.navigation
 
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.am.now.designsystem.icon.NowIcons
-import com.am.now.foryou.R as forYouR
+import com.am.now.feature.foryou.R as forYouR
+
 
 
 // TODO: Update Both BookMarks and Interests details once implemented.
