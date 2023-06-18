@@ -34,6 +34,10 @@ gradlePlugin{
             id = "now.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "now.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
         register("androidApplication"){
             id = "now.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
@@ -49,6 +53,23 @@ gradlePlugin{
         register("androidApplicationJacoco"){
             id = "now.android.application.jacoco"
             implementationClass = "AndroidApplicationJacocoConventionPlugin"
+        }
+
+        register("androidLibraryCompose") {
+            id = "now.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("androidFeature") {
+            id = "now.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
+        register("androidHilt") {
+            id = "now.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
+        register("androidFirebase") {
+            id = "now.android.application.firebase"
+            implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
     }
 }

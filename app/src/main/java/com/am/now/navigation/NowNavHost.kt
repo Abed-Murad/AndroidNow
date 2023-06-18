@@ -8,9 +8,13 @@ import com.am.now.ui.NowAppState
 @Composable
 fun NowNavHost(
     appState: NowAppState,
-    onShowSnackbar: suspend  (String, String?) -> Boolean,
+    onShowSnackbar: suspend (String, String?) -> Boolean,
     modifier: Modifier = Modifier,
-    startDestination:String = forYouNavigationRoute,
-){
-
+    startDestination: String = forYouNavigationRoute,
+) {
+    val navController = appState.navController
+    NavHost(navController = navController,
+        startDestination = startDestination,
+        modifier = Modifier){
+    }
 }
