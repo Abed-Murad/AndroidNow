@@ -13,12 +13,11 @@ import kotlinx.coroutines.CoroutineScope
 @Stable
 class NowAppState(
     val navController: NavHostController,
-    val coroutineScope:CoroutineScope,
+    val coroutineScope: CoroutineScope,
     val windowSizeClass: WindowSizeClass,
     networkMonitor: NetworkMonitor,
     userNewsResourceRepository: UserNewsResourceRepository,
-    ){
-    val currentDestination:NavDestination?
+) {
+    val currentDestination: NavDestination?
         @Composable get() = navController.currentBackStackEntryAsState().value?.destination
-
 }

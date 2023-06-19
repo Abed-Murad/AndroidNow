@@ -6,21 +6,19 @@ import androidx.navigation.NavDestination
 import com.am.now.navigation.TopLevelDestination
 import component.NowNavigationBar
 
-
 @Composable
-fun NowApp(){
+fun NowApp() {
 //    NowBottomBar()
 }
 
 @Composable
 fun NowBottomBar(
-    destinations:List<TopLevelDestination>,
-    destinationsWithUnreadResources:Set<TopLevelDestination>,
-    onNavigateToDestination:(TopLevelDestination) -> Unit,
+    destinations: List<TopLevelDestination>,
+    destinationsWithUnreadResources: Set<TopLevelDestination>,
+    onNavigateToDestination: (TopLevelDestination) -> Unit,
     currentDestination: NavDestination?,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
-    NowNavigationBar(modifier = modifier){
-
+    NowNavigationBar(modifier = modifier) {
     }
 }
