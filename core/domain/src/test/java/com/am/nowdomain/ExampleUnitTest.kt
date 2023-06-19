@@ -1,7 +1,6 @@
 package com.am.nowdomain
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**

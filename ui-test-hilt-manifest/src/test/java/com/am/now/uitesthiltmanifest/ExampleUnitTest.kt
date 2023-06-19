@@ -1,7 +1,6 @@
-package com.am.now.datastore_test
+package com.am.now.uitesthiltmanifest
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**

@@ -1,7 +1,6 @@
 package com.am.now.network
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**

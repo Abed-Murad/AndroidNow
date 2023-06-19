@@ -1,7 +1,6 @@
 package com.am.now.settings
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**

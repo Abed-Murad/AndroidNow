@@ -1,7 +1,6 @@
 package com.am.now.bookmarks
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**

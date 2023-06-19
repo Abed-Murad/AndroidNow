@@ -1,7 +1,6 @@
-package com.am.now.data_test
+package com.am.now.core.data.test
 
 import org.junit.Test
-
 import kotlin.test.assertEquals
 
 /**
