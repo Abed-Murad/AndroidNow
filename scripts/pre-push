@@ -1,19 +1,18 @@
 #!/bin/sh
-# From gist at https://gist.github.com/chadmaughan/5889802
 
-echo '[Pre-Push git hook] executing gradle spotlessCheck before commit'
+echo '[git hook] executing gradle spotlessCheck before commit'
 
-# stash any unstaged changes
-git stash -q --keep-index
+# check if there are any unstaged changes
+if ! git diff --exit-code --quiet; then
+    echo '[git hook] unstaged changes found, skipping stash and spotlessApply'
+    exit 0
+fi
 
 # run the spotlessCheck with the gradle wrapper
-./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
+./gradlew spotlessApply --init-script gradle/init.gradle.kts --no-configuration-cache
 
 # store the last exit code in a variable
 RESULT=$?
-
-# unstash the unstashed changes
-git stash pop -q
 
 # return the './gradlew spotlessCheck' exit code
 exit $RESULT

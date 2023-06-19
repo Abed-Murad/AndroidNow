@@ -9,19 +9,18 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun NowNavigationBar(
-    modifier: Modifier =Modifier,
+    modifier: Modifier = Modifier,
     content: @Composable RowScope.() -> Unit,
-){
+) {
     NavigationBar(
         modifier = modifier,
         contentColor = NowNavigationDefaults.navigationContentColor(),
         tonalElevation = 0.dp,
-        content = content
+        content = content,
     )
 }
 
-
-object NowNavigationDefaults{
+object NowNavigationDefaults {
     @Composable
     fun navigationContentColor() = MaterialTheme.colorScheme.onSurfaceVariant
 }

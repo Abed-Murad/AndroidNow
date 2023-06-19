@@ -1,8 +1,7 @@
-package com.am.now.data_test
+package com.am.now.uitesthiltmanifest
 
 import org.junit.Test
-
-import org.junit.Assert.*
+import kotlin.test.assertEquals
 
 /**
  * Example local unit test, which will execute on the development machine (host).

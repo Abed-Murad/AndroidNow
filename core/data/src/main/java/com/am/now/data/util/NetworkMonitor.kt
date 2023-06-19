@@ -2,6 +2,6 @@ package com.am.now.data.util
 
 import kotlinx.coroutines.flow.Flow
 
-interface NetworkMonitor{
+interface NetworkMonitor {
     val isOnline: Flow<Boolean>
 }

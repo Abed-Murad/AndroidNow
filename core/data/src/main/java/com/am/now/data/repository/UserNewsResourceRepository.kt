@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface UserNewsResourceRepository {
     fun observeAll(
-        query:NewsResourceQuery = NewsResourceQuery(
+        query: NewsResourceQuery = NewsResourceQuery(
             filterTopicIds = null,
             filterNewsIds = null,
         ),
@@ -13,5 +13,5 @@ interface UserNewsResourceRepository {
 
     fun observeAllForFollowedTopics(): Flow<List<UserNewsResource>>
 
-    fun observeAllBookmarked():Flow<List<UserNewsResource>>
+    fun observeAllBookmarked(): Flow<List<UserNewsResource>>
 }

@@ -2,7 +2,6 @@ package com.am.now.model.data
 
 import kotlinx.datetime.Instant
 
-
 data class NewsResource(
     val id: String,
     val title: String,

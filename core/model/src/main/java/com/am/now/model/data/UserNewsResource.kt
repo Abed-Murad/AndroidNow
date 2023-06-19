@@ -13,8 +13,8 @@ data class UserNewsResource internal constructor(
     val followableTopics: List<FollowableTopic>,
     val isSaved: Boolean,
     val hasBeenViewed: Boolean,
-){
-    constructor(newsResource: NewsResource ,userData: UserData):this(
+) {
+    constructor(newsResource: NewsResource, userData: UserData) : this(
         id = newsResource.id,
         title = newsResource.title,
         content = newsResource.content,
@@ -25,15 +25,14 @@ data class UserNewsResource internal constructor(
         followableTopics = newsResource.topics.map { topic: Topic ->
             FollowableTopic(
                 topic = topic,
-                isFollowed = userData.viewedNewsResources.contains(topic.id)
+                isFollowed = userData.viewedNewsResources.contains(topic.id),
             )
         },
         isSaved = userData.bookmarkedNewsResources.contains(newsResource.id),
-        hasBeenViewed = userData.viewedNewsResources.contains(newsResource.id)
+        hasBeenViewed = userData.viewedNewsResources.contains(newsResource.id),
     )
 }
 
-
-fun List<NewsResource>.mapToUserNewsResources(userData: UserData):List<UserNewsResource>{
+fun List<NewsResource>.mapToUserNewsResources(userData: UserData): List<UserNewsResource> {
     return this.map { UserNewsResource(it, userData) }
 }
