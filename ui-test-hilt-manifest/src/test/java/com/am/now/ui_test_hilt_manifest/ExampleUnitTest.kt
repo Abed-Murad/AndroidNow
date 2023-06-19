@@ -2,7 +2,7 @@ package com.am.now.ui_test_hilt_manifest
 
 import org.junit.Test
 
-import org.junit.Assert.*
+import kotlin.test.assertEquals
 
 /**
  * Example local unit test, which will execute on the development machine (host).
