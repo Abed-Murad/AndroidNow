@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-
 @Composable
 fun NowButton(
     onClick: () -> Unit,
@@ -33,7 +32,6 @@ fun NowButton(
     )
 }
 
-
 @Composable
 fun NowButton(
     onClick: () -> Unit,
@@ -48,7 +46,6 @@ fun NowButton(
         enabled = enabled,
         contentPadding = if (leadingIcon != null) {
             ButtonDefaults.ButtonWithIconContentPadding
-
         } else {
             ButtonDefaults.ContentPadding
         },
