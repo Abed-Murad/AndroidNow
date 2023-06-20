@@ -35,7 +35,6 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
-
 @Composable
 fun rememberNowAppState(
     windowSizeClass: WindowSizeClass,
@@ -61,7 +60,6 @@ fun rememberNowAppState(
         )
     }
 }
-
 
 @Stable
 class NowAppState(
@@ -91,9 +89,8 @@ class NowAppState(
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(5_000),
-            initialValue = false
+            initialValue = false,
         )
-
 
     val topLevelDestinations: List<TopLevelDestination> = TopLevelDestination.values().asList()
 
@@ -109,7 +106,6 @@ class NowAppState(
                 SharingStarted.WhileSubscribed(5_000),
                 initialValue = emptySet(),
             )
-
 
     fun navigateToTopLevelDestination(topLevelDestination: TopLevelDestination) {
         trace("Navigation: ${topLevelDestination.name}") {
@@ -138,9 +134,7 @@ class NowAppState(
     fun navigateToSearch() {
         navController.navigateToSearch()
     }
-
 }
-
 
 @Composable
 private fun NavigationTrackingSideEffect(navController: NavHostController) {

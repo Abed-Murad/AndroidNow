@@ -13,18 +13,20 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface DataModule{
+interface DataModule {
 
     @Binds
     fun bindsUserDataRepository(
         userDataRepository: OfflineFirstUserDataRepository,
-    ):UserDataRepository
+    ): UserDataRepository
+
     @Binds
     fun bindsNewsResourcesRepository(
-        newsRepository: OfflineFirstNewsRepository
-    ):NewsRepository
+        newsRepository: OfflineFirstNewsRepository,
+    ): NewsRepository
+
     @Binds
     fun bindsNetworkMonitor(
-        networkMonitor: ConnectivityManagerNetworkMonitor
-    ):NetworkMonitor
+        networkMonitor: ConnectivityManagerNetworkMonitor,
+    ): NetworkMonitor
 }

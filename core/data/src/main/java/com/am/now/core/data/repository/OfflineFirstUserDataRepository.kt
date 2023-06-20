@@ -6,9 +6,7 @@ import com.am.now.model.data.UserData
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class OfflineFirstUserDataRepository @Inject constructor(
-
-) :UserDataRepository {
+class OfflineFirstUserDataRepository @Inject constructor() : UserDataRepository {
     override val userData: Flow<UserData> = TODO()
 
     override suspend fun setFollowedTopicIds(followedTopicIds: Set<String>) {

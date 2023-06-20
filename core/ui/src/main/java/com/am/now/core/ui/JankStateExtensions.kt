@@ -9,23 +9,22 @@ import androidx.compose.ui.platform.LocalView
 import androidx.metrics.performance.PerformanceMetricsState
 import androidx.metrics.performance.PerformanceMetricsState.Holder
 
-
-
 @Composable
-fun rememberMetricsStateHolder():Holder{
+fun rememberMetricsStateHolder(): Holder {
     val localView = LocalView.current
 
-    return remember(localView){
+    return remember(localView) {
         PerformanceMetricsState.getHolderForHierarchy(localView)
     }
 }
+
 @Composable
 fun TrackDisposableJank(
     vararg keys: Any?,
-    reportMetric: DisposableEffectScope.(state : Holder) -> DisposableEffectResult,
+    reportMetric: DisposableEffectScope.(state: Holder) -> DisposableEffectResult,
 ) {
     val metrics = rememberMetricsStateHolder()
-    DisposableEffect(metrics, *keys){
+    DisposableEffect(metrics, *keys) {
         reportMetric(this, metrics)
     }
 }

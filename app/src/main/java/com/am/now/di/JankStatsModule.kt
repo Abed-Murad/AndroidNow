@@ -26,7 +26,6 @@ object JankStatsModule {
         return activity.window
     }
 
-
     @Provides
     fun providesJankStats(
         window: Window,

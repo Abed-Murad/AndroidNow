@@ -9,16 +9,15 @@ import com.am.now.core.data.util.NetworkMonitor
 import com.am.now.core.designsystem.component.NowNavigationBar
 import com.am.now.navigation.TopLevelDestination
 
-
 @Composable
 fun NowApp(
-    windowSizeClass:WindowSizeClass,
+    windowSizeClass: WindowSizeClass,
     networkMonitor: NetworkMonitor,
     userNewsResourceRepository: UserNewsResourceRepository,
     appState: NowAppState = rememberNowAppState(
         networkMonitor = networkMonitor,
-        windowSizeClass = windowSizeClass ,
-        userNewsResourceRepository = userNewsResourceRepository
+        windowSizeClass = windowSizeClass,
+        userNewsResourceRepository = userNewsResourceRepository,
     ),
 ) {
 }
@@ -34,5 +33,3 @@ fun NowBottomBar(
     NowNavigationBar(modifier = modifier) {
     }
 }
-
-

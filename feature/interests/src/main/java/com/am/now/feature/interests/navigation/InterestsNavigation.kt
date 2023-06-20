@@ -5,6 +5,6 @@ import androidx.navigation.NavOptions
 
 const val interestsRoute = "interests_route"
 
-fun NavController.navigateToInterestsGraph(navOptions: NavOptions? = null){
+fun NavController.navigateToInterestsGraph(navOptions: NavOptions? = null) {
     this.navigate(interestsRoute, navOptions)
 }

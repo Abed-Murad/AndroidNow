@@ -36,7 +36,6 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -71,8 +70,6 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-
-
         splashScreen.setKeepOnScreenCondition {
             when (uiState) {
                 Loading -> true
@@ -83,7 +80,6 @@ class MainActivity : ComponentActivity() {
         // Turn off the decor fitting system windows, which allows us to handle insets,
         // including IME animations
         WindowCompat.setDecorFitsSystemWindows(window, false)
-
 
         setContent {
             val systemUiController = rememberSystemUiController()
@@ -104,14 +100,13 @@ class MainActivity : ComponentActivity() {
                     NowApp(
                         networkMonitor = networkMonitor,
                         windowSizeClass = calculateWindowSizeClass(this),
-                        userNewsResourceRepository = userNewsResourceRepository
+                        userNewsResourceRepository = userNewsResourceRepository,
                     )
                 }
             }
         }
     }
 }
-
 
 @Composable
 private fun shouldUseAndroidTheme(
@@ -124,7 +119,6 @@ private fun shouldUseAndroidTheme(
     }
 }
 
-
 @Composable
 private fun shouldDisableDynamicTheming(
     uiState: MainActivityUiState,
@@ -132,7 +126,6 @@ private fun shouldDisableDynamicTheming(
     Loading -> false
     is Success -> !uiState.userData.useDynamicColor
 }
-
 
 @Composable
 private fun shouldUseDarkTheme(
@@ -144,5 +137,4 @@ private fun shouldUseDarkTheme(
         DarkThemeConfig.LIGHT -> false
         DarkThemeConfig.DARK -> true
     }
-
 }

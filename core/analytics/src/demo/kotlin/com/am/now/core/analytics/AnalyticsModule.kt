@@ -7,7 +7,7 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class AnalyticsModule{
+abstract class AnalyticsModule {
     @Binds
-    abstract fun bindsAnalyticsHelper(analyticsHelperImpl:StubAnalyticsHelper):AnalyticsHelper
+    abstract fun bindsAnalyticsHelper(analyticsHelperImpl: StubAnalyticsHelper): AnalyticsHelper
 }

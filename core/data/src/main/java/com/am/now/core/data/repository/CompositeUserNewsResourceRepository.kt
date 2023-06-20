@@ -6,8 +6,8 @@ import javax.inject.Inject
 
 class CompositeUserNewsResourceRepository @Inject constructor(
     val newsRepository: NewsRepository,
-    val userDataRepository: UserDataRepository
-):UserNewsResourceRepository {
+    val userDataRepository: UserDataRepository,
+) : UserNewsResourceRepository {
     override fun observeAll(query: NewsResourceQuery): Flow<List<UserNewsResource>> {
         TODO("Not yet implemented")
     }
