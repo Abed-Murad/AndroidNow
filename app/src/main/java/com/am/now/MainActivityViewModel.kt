@@ -15,17 +15,17 @@ import javax.inject.Inject
 class MainActivityViewModel @Inject constructor(
     userDataRepository: UserDataRepository,
 ) : ViewModel() {
-    val uiState: StateFlow<MainActivityUIState> = userDataRepository.userData.map {
-        MainActivityUIState.Success(it)
+    val uiState: StateFlow<MainActivityUiState> = userDataRepository.userData.map {
+        MainActivityUiState.Success(it)
     }.stateIn(
         scope = viewModelScope,
-        initialValue = MainActivityUIState.Loading,
+        initialValue = MainActivityUiState.Loading,
         started = SharingStarted.WhileSubscribed(5_000),
     )
 }
 
 
-sealed interface MainActivityUIState {
-    object Loading : MainActivityUIState
-    data class Success(val userData: UserData) : MainActivityUIState
+sealed interface MainActivityUiState {
+    object Loading : MainActivityUiState
+    data class Success(val userData: UserData) : MainActivityUiState
 }
