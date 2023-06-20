@@ -1,4 +1,4 @@
-package com.am.now.designsystem.theme
+package com.am.now.core.designsystem.theme
 
 import android.os.Build
 import androidx.annotation.ChecksSdkIntAtLeast

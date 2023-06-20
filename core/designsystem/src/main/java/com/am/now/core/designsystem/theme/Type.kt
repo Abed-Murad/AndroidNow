@@ -1,4 +1,4 @@
-package com.am.now.designsystem.theme
+package com.am.now.core.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
