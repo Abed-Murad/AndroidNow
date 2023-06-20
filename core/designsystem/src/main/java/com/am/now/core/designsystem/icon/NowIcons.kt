@@ -1,4 +1,4 @@
-package com.am.now.designsystem.icon
+package com.am.now.core.designsystem.icon
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Bookmarks
