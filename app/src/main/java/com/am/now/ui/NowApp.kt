@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavDestination
 import com.am.now.navigation.TopLevelDestination
-import component.NowNavigationBar
+import com.am.now.core.designsystem.component.NowNavigationBar
 
 @Composable
 fun NowApp() {

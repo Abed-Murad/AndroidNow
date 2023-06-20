@@ -1,4 +1,4 @@
-package component
+package com.am.now.core.designsystem.component
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material3.MaterialTheme

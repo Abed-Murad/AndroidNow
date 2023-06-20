@@ -1,4 +1,4 @@
-package com.am.now.data.repository
+package com.am.now.core.data.repository
 
 import com.am.now.model.data.NewsResource
 import kotlinx.coroutines.flow.Flow

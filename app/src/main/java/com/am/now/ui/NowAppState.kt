@@ -6,8 +6,8 @@ import androidx.compose.runtime.Stable
 import androidx.navigation.NavDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.am.now.data.repository.UserNewsResourceRepository
-import com.am.now.data.util.NetworkMonitor
+import com.am.now.core.data.repository.UserNewsResourceRepository
+import com.am.now.core.data.util.NetworkMonitor
 import kotlinx.coroutines.CoroutineScope
 
 @Stable

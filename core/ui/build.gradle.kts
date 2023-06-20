@@ -10,3 +10,8 @@ android {
     }
     namespace = "com.am.now.core.ui"
 }
+
+
+dependencies{
+    api(libs.androidx.metrics)
+}

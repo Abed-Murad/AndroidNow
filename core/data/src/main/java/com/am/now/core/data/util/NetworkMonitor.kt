@@ -1,4 +1,4 @@
-package com.am.now.data.util
+package com.am.now.core.data.util
 
 import kotlinx.coroutines.flow.Flow
 
