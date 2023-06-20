@@ -85,13 +85,13 @@ val DarkAndroidBackgroundTheme = BackgroundTheme(color = Color.Black)
 @Composable
 fun NowTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    androidTheme:Boolean =false,
-    disableDynamicTheming:Boolean = true,
-    content:@Composable () -> Unit,
-){
-    val colorScheme = when{
+    androidTheme: Boolean = false,
+    disableDynamicTheming: Boolean = true,
+    content: @Composable () -> Unit,
+) {
+    val colorScheme = when {
         androidTheme -> if (darkTheme) DarkDefaultColorScheme else LightDefaultColorScheme
-        !disableDynamicTheming && supportsDynamicTheming()->{
+        !disableDynamicTheming && supportsDynamicTheming() -> {
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
@@ -136,10 +136,7 @@ fun NowTheme(
             content = content,
         )
     }
-
 }
-
-
 
 @ChecksSdkIntAtLeast(api = Build.VERSION_CODES.S)
 fun supportsDynamicTheming() = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
