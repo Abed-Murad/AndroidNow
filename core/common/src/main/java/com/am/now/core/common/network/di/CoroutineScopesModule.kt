@@ -16,8 +16,6 @@ import javax.inject.Singleton
 @Qualifier
 annotation class ApplicationScope
 
-
-
 @Module
 @InstallIn(SingletonComponent::class)
 object CoroutineScopesModule {
@@ -26,5 +24,5 @@ object CoroutineScopesModule {
     @ApplicationScope
     fun providesCoroutineScope(
         @Dispatcher(NowDispatchers.Default) dispatcher: CoroutineDispatcher,
-    ):CoroutineScope = CoroutineScope(SupervisorJob() + dispatcher)
+    ): CoroutineScope = CoroutineScope(SupervisorJob() + dispatcher)
 }

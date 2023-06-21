@@ -10,14 +10,14 @@ class CompositeUserNewsResourceRepository @Inject constructor(
     val userDataRepository: UserDataRepository,
 ) : UserNewsResourceRepository {
     override fun observeAll(query: NewsResourceQuery): Flow<List<UserNewsResource>> {
-        return flow {  }
+        return flow { }
     }
 
     override fun observeAllForFollowedTopics(): Flow<List<UserNewsResource>> {
-        return flow {  }
+        return flow { }
     }
 
     override fun observeAllBookmarked(): Flow<List<UserNewsResource>> {
-        return flow {  }
+        return flow { }
     }
 }

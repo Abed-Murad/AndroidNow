@@ -1,6 +1,5 @@
 package com.am.now.core.common.network
 
-
 import javax.inject.Qualifier
 import kotlin.annotation.AnnotationRetention.RUNTIME
 
