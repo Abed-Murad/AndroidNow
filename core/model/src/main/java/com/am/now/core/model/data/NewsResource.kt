@@ -1,4 +1,4 @@
-package com.am.now.model.data
+package com.am.now.core.model.data
 
 import kotlinx.datetime.Instant
 

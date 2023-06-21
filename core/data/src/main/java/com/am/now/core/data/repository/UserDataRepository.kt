@@ -1,8 +1,8 @@
 package com.am.now.core.data.repository
 
-import com.am.now.model.data.DarkThemeConfig
-import com.am.now.model.data.ThemeBrand
-import com.am.now.model.data.UserData
+import com.am.now.core.model.data.DarkThemeConfig
+import com.am.now.core.model.data.ThemeBrand
+import com.am.now.core.model.data.UserData
 import kotlinx.coroutines.flow.Flow
 
 interface UserDataRepository {

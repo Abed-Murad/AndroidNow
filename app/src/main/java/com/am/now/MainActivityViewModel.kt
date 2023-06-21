@@ -3,7 +3,7 @@ package com.am.now
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.am.now.core.data.repository.UserDataRepository
-import com.am.now.model.data.UserData
+import com.am.now.core.model.data.UserData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

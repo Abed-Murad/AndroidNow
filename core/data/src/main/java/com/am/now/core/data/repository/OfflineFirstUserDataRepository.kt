@@ -1,14 +1,16 @@
 package com.am.now.core.data.repository
 
-import com.am.now.model.data.DarkThemeConfig
-import com.am.now.model.data.ThemeBrand
-import com.am.now.model.data.UserData
+import com.am.now.core.datastore.NowPreferencesDataSource
+import com.am.now.core.model.data.DarkThemeConfig
+import com.am.now.core.model.data.ThemeBrand
+import com.am.now.core.model.data.UserData
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class OfflineFirstUserDataRepository @Inject constructor() : UserDataRepository {
-    override val userData: Flow<UserData> = TODO()
-
+class OfflineFirstUserDataRepository @Inject constructor(
+    private val nowPreferencesDataSource: NowPreferencesDataSource,
+) : UserDataRepository {
+    override val userData: Flow<UserData> = nowPreferencesDataSource.userData
     override suspend fun setFollowedTopicIds(followedTopicIds: Set<String>) {
         TODO("Not yet implemented")
     }

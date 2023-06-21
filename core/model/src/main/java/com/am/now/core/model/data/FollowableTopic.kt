@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.am.now.model.data
+package com.am.now.core.model.data
 
 /**
  * A [topic] with the additional information for whether or not it is followed.

@@ -26,8 +26,8 @@ import com.am.now.core.analytics.LocalAnalyticsHelper
 import com.am.now.core.data.repository.UserNewsResourceRepository
 import com.am.now.core.data.util.NetworkMonitor
 import com.am.now.core.designsystem.theme.NowTheme
-import com.am.now.model.data.DarkThemeConfig
-import com.am.now.model.data.ThemeBrand
+import com.am.now.core.model.data.DarkThemeConfig
+import com.am.now.core.model.data.ThemeBrand
 import com.am.now.ui.NowApp
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint

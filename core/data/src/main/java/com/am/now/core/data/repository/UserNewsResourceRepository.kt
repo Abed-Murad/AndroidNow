@@ -1,6 +1,6 @@
 package com.am.now.core.data.repository
 
-import com.am.now.model.data.UserNewsResource
+import com.am.now.core.model.data.UserNewsResource
 import kotlinx.coroutines.flow.Flow
 
 interface UserNewsResourceRepository {

@@ -1,6 +1,6 @@
 package com.am.now.core.data.repository
 
-import com.am.now.model.data.NewsResource
+import com.am.now.core.model.data.NewsResource
 import kotlinx.coroutines.flow.Flow
 
 data class NewsResourceQuery(
