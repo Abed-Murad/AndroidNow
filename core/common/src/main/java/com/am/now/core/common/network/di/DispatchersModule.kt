@@ -1,7 +1,8 @@
 package com.am.now.core.common.network.di
 
 import com.am.now.core.common.network.Dispatcher
-import com.am.now.core.common.network.NowDispatchers.*
+import com.am.now.core.common.network.NowDispatchers.Default
+import com.am.now.core.common.network.NowDispatchers.IO
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
